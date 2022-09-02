@@ -7,6 +7,8 @@ import CadastroUsuario from './paginas/cadastrousuario/CadastroUsuario';
 import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
 import './App.css';
+import ListaTema from './components/temas/listatema/ListaTema';
+import ListaPostagem from './components/postagens/listapostagem/ListaPostagem';
 
 
 
@@ -28,6 +30,9 @@ function App() {
 
           <Route path='/cadastrousuario' element={<CadastroUsuario />} />
     
+          <Route path='/temas' element={<ListaTema />} />
+
+          <Route path='/posts' element={<ListaPostagem />} />
 
       </Routes>
       </div>
