@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import {Typography, Button, Card, CardActions, CardContent } from "@material-ui/core";
 import {Box} from '@mui/material';
-import './DeletarPostagem.css';
+import './DeletarPost.css';
 import Postagem from '../../../models/Postagem';
+
 
 
 function DeletarPostagem() {
