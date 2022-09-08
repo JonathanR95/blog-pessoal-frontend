@@ -46,9 +46,9 @@ function Login(){
 
     return(
         <Grid container direction='row' justifyContent='center' alignItems='center'>
-            <Grid xs ={6} alignItems='center'>
+            <Grid xs ={6} alignItems='center' >
                 <Box paddingX={20}>
-                    <form onSubmit={onSubmit}>
+                    <form onSubmit={onSubmit} >
                         <Typography variant='h3' gutterBottom color='textPrimary' align='center' className='textos1' >Entrar</Typography>
 
                         <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>)=> updatedModel(e)} id='usuario' label='usuario' variant='outlined' name='usuario' margin='normal' fullWidth />

@@ -39,9 +39,9 @@ function ListaPostagem() {
     <>
     {
         posts.map(post => (
-      <Box m={2} >
-        <Card variant="outlined">
-          <CardContent>
+      <Box m={2}>
+        <Card variant="outlined" className='card'>
+          <CardContent >
 
             <Typography color="textSecondary" gutterBottom>
               Postagens

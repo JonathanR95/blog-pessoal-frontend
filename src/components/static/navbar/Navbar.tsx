@@ -5,6 +5,7 @@ import './Navbar.css'
 import {Box} from "@mui/material"
 import {useNavigate} from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
+import LogoImg from '../../../imagens/titulo.png'
 
 function Navbar(){
 
@@ -21,11 +22,11 @@ function Navbar(){
 
     return(
         <>
-             <AppBar position="static">
+             <AppBar position="static" className='navbar'>
                 <Toolbar variant="dense">
                     <Box className='cursor' >
                         <Typography variant="h5" color="inherit">
-                            BlogPessoal
+                            <div className="logo-img"><img src={LogoImg} alt="" height='50px'/></div>
                         </Typography>
                     </Box>
 
