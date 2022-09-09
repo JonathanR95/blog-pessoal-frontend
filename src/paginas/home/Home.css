@@ -23,3 +23,7 @@
     justify-content: center;
     align-items: center;
 }
+
+.text-decorator-none{
+    text-decoration: none;
+}
