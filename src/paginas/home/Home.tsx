@@ -9,6 +9,7 @@ import LogoImg from '../../imagens/logo-touro-invest.png';
 import LogoTitulo from '../../imagens/titulo.png';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
+import { toast } from 'react-toastify';
 
 
 
@@ -21,7 +22,16 @@ function Home(){
     
     useEffect(() => {
       if (token == "") {
-          alert("Você precisa estar logado")
+        toast.error('Você precisa estar logado!',{
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+            });
           history("/login")
   
       }

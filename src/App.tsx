@@ -15,7 +15,8 @@ import DeletarPostagem from './components/postagens/deletarpost/DeletarPost';
 import DeletarTema from './components/temas/deletartema/DeletarTema';
 import {Provider} from 'react-redux';
 import store from './store/store';
-
+import {ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -23,6 +24,7 @@ import store from './store/store';
 function App() {
   return (
   <Provider store={store}>
+    <ToastContainer/>
   <Router>
 
     <Navbar />
