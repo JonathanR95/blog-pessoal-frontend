@@ -45,15 +45,15 @@ function App() {
 
           <Route path='/posts' element={<ListaPostagem />} />
 
-          <Route path="/formularioPost" element={<CadastroPost />} />
+          <Route path="/formularioPostagem" element={<CadastroPost />} />
 
-          <Route path="/formularioPost/:id" element={<CadastroPost />} />
+          <Route path="/formularioPostagem/:id" element={<CadastroPost />} />
 
           <Route path="/formularioTema" element={<CadastroTema />} />
 
           <Route path="/formularioTema/:id" element={<CadastroTema />} />
 
-          <Route path="/deletarPost/:id" element={<DeletarPostagem />} />
+          <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
 
           <Route path="/deletarTema/:id" element={<DeletarTema />} />
 
