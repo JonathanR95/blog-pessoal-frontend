@@ -1,3 +1,18 @@
 .titulo{
     font-weight: bold;
+    color: black !important;
+ }
+
+ .faixa-postagem{
+    background-color: azure;
+ }
+
+ .bg-menu{
+    background: white !important;
+    color: black !important;
+ }
+
+ .textos-sobrenos{
+    width: 950px;
+    margin: 0 auto !important;
  }
