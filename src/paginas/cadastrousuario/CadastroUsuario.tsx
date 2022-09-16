@@ -89,6 +89,8 @@ function CadastroUsuario(){
 
                         <TextField value={user.usuario} onChange={(e:ChangeEvent<HTMLInputElement>)=> updateModel(e)} id='usuario' label='usuario' variant='outlined' name='usuario' margin='normal' fullWidth />
 
+                        <TextField value={user.foto} onChange={(e:ChangeEvent<HTMLInputElement>)=> updateModel(e)} id='foto' label='Insira a Url da Foto' variant='outlined' name='foto' margin='normal' fullWidth />
+
                         <TextField value={user.senha} onChange={(e:ChangeEvent<HTMLInputElement>)=> updateModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' fullWidth type='password' />
 
                         <TextField value={confirmarSenha} onChange={(e:ChangeEvent<HTMLInputElement>)=> confirmarSenhaHandle(e)} id='confirmarSenha' label='confirmarSenha' variant='outlined' name='confirmarSenha' margin='normal' fullWidth type='password'/>
